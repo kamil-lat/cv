@@ -3,96 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <title>Kamil CV</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <table cellspacing="10">
-      <tr>
-        <td>
-          <img
-            src="Avatar.jfif"
-            alt="Умный человек скачать обои"
-            width="200"
-          />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+
+        <img src="Avatar.jfif" alt="Тут моё фото" class="avatar" />
+
+        <div class="info-text">
           <h1>Камиль Латыпов</h1>
-          <p>
-            <em
-              >Студент <strong>Айрокосмического университета</strong> в
-              Самаре</em
-            >
-          </p>
-        </td>
-      </tr>
-    </table>
+          <p>Студент <strong>Аэрокосмического университета</strong> в Самаре</p>
+          <h4>Мои социальные сети:</h4>
+          <a href="https://vk.com/kkactuss" target="_blank">VK</a> |
+          <a href="https://t.me/ghyrson_starn" target="_blank">Telegram</a>
+        </div>
+      </div>
 
-    <hr />
+      <div class="card bg-yellow">
+        <h2>Мои хобби:</h2>
+        <ol class="list">
+          <li>Настольные игры</li>
+          <li>Баскетбол</li>
+          <li>Настольный теннис</li>
+          <li>Чтение книг</li>
+        </ol>
+      </div>
 
-    <h2>Мои социальные сети:</h2>
-    <ul type="square">
-      <li><a href="https://vk.com/kkactuss" target="_blank">VK</a></li>
-      <li>
-        <a href="https://web.telegram.org/k/" target="_blank">Telegrem</a>
-      </li>
-    </ul>
+      <div class="card bg-green">
+        <h2>Образование</h2>
+        <table class="table">
+          <tr>
+            <td>МБОУ СОШ №77</td>
+            <td>11 лет</td>
+            <td>Отлично</td>
+          </tr>
+          <tr>
+            <td>СГАУ имени Королёва</td>
+            <td>1 год(в процессе обучения)</td>
+            <td>Отлично</td>
+          </tr>
+        </table>
+      </div>
 
-    <hr />
+      <div class="card bg-red">
+        <h2>Мои работы</h2>
+        <ul class="linklist">
+          <li>
+            <a href="https://github.com/kamil-lat">Профиль на GitHub</a>
+          </li>
+          <li>
+            <a href="https://github.com/kamil-lat">Профиль на GitHub</a>
+          </li>
+          <li>
+            <a href="https://github.com/kamil-lat">Профиль на GitHub</a>
+          </li>
+        </ul>
+      </div>
 
-    <h2>Мои хобби:</h2>
-    <ol>
-      <li>Настольные игры</li>
-    </ol>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" placeholder="Введите имя..." id="name" />
+            </div>
 
-    <hr />
+            <div class="form-group">
+              <label for="e">Ваш email:</label>
+              <input type="email" id="e" placeholder="Введите email..." />
+            </div>
+          </div>
 
-    <h2>Образование</h2>
-    <table border="1">
-      <tr>
-        <th>Место обучения</th>
-        <th>Продолжительность</th>
-        <th>Успеваемость</th>
-      </tr>
-      <tr>
-        <td>МБОУ СОШ №77</td>
-        <td>11 лет</td>
-        <td>Отлично</td>
-      </tr>
-      <tr>
-        <td>СГАУ имени Королёва</td>
-        <td>1 год(в процессе обучуния)</td>
-        <td>Отлично</td>
-      </tr>
-    </table>
+          <div class="form-group">
+            <label for="mail">Ваше обращение:</label>
+            <textarea cols="20" rows="3" id="mail"></textarea>
+          </div>
 
-    <hr />
-
-    <h2>Мои мтг колоды</h2>
-    <a href="mtgdeck.html">Посмотреть список</a>
-
-    <hr />
-
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" placeholder="Введите имя..." id="name">
-    
-        <br>
-
-        <label for="e">Ваш email:</label>
-        <input type="email" id="e" placeholder="Введите email...">
-
-        <br>
-
-        <label for="mail">Текст письма:</label>
-
-        <br>
-
-        <textarea cols="20" rows="3" id="mail"></textarea>
-
-        <br>
-
-        <input type="button" value="Отправить">
-    </form>
+          <input class="button" type="button" value="Отправить" />
+        </form>
+        <div class="top"></div>
+        <div class="box"></div>
+      </div>
+      <div style="margin-bottom: 60px"></div>
+    </div>
   </body>
 </html>
